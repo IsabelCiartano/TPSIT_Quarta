@@ -1,0 +1,26 @@
+#include<stdio.h>
+#define FILESOURCE "es1.c"
+#define FILECOPY "copia1.txt"
+
+int main(int argc,char **argv){
+     FILE *in;
+     FILE *out;
+     char c;
+     in=fopen(FILESOURCE,"r");
+     if(in ==NULL){
+          printf("impossibile aprire");
+          return 1 ;   
+     }
+     out = fopen(FILECOPY,"w");
+      if(out ==NULL){
+          printf("impossibile scivrere");
+          return 1;   
+     }
+        while((c=getc(in))!= EOF){
+             fputc(c, out); 
+        }
+        fclose(out);
+        fclose(in);
+     
+     return 0;
+   }
