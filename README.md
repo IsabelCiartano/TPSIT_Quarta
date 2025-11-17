@@ -1,2 +1,2 @@
-# TPSIT_Quarta
-Questa repository contiene i codici di tpsit fatti durante l'anno 2025/2026
+# TPSIT  4 A ROB
+Questa repository contiene i codici in c scritti durante la disciplina tpsit  durante l'anno 2025/2026
