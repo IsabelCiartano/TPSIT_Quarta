@@ -23,3 +23,6 @@ void freeEvent(Event* e);
 char* eventToCSV(Event* e);
 void sortEventsByName(Event**events);
 Event** findEventsInRange(Event** events,Date from,Date to;int* outCount);
+
+#include "Event.c"
+#endif
