@@ -2,11 +2,7 @@
 Event* createEvent(char*title;Date*date){
     Event* event=(Event*)malloc(sizeof(Event));
     event->title=strdup(title);
-    event->date = malloc(sizeof(Date));
-    event->date->gg=date->gg;
-    event->date->mm=date->mm;
-    event->date->aa=date->aa;
-    event->id=id+1;
+    event->date=date
     return event;
 }
 
@@ -16,10 +12,7 @@ int getId(Event* e){
 
 void setDate(Event* e,Date* date){
    freeDate(e->date);
-   e->date = malloc(sizeof(Date));
-    e->date->gg=date->gg;
-    e->date->mm=date->mm;
-    e->date->aa=date->aa;
+  e->date=date;
 }
 
 void freeEvent(Event* e){
@@ -50,10 +43,10 @@ void sortEventsByName(Event **events, int n) {
 }
 
 
-Event** findEventsInRange(Event** events,Date from,Date to;int* outCount,int n){
+Event** findEventsInRange(Event** events,Date from,Date to;int* outCount){
     *outCount=0;
    Event**c=NULL;
-    for(int k=0;k<n;k++){
+    for(int k=0;events!=NULL;k++){
         if(dateCmp(events[k]->date,&from)>=0 && dateCmp(events[k]->date,&to)<=0){
             c = (Events**)malloc(sizeof(Event*)*(*outCount+1));
             c[*outCount]=events[k];
