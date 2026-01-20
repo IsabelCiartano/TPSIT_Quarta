@@ -39,6 +39,8 @@ int isMatching(char close, char open) {
            (close == '}' && open == '{');
 }
 
+
+
 int main(int argc, char* argv[]) {
     if (argc < 2) {
         printf("usage: %s string\n", argv[0]);
