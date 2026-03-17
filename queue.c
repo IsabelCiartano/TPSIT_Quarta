@@ -27,7 +27,7 @@ void showrec(Node*f){//ver ricorsiva
     }
 }
 
-Node* in(int k,Node*f){//aggiungo in coda
+Node* in(int key,Node*f){//aggiungo in coda
     Node* saved=f;  
     if(!f)return push(key,f);
     while(f->next)f=f->next;//punta all'elemento in fondo 
